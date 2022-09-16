@@ -1,0 +1,34 @@
+---
+title: "Scratch_Work"
+output: html_document
+date: '2022-09-16'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# lets see if we can figure something out for this survival pool
+
+```{r}
+url <- "https://projects.fivethirtyeight.com/nfl-api/nfl_elo_latest.csv"
+
+data <- read_csv(url)
+```
+
+```{r}
+head(data, 50)
+```
+
+Ok seems, like the data is pretty nice, I'll pretty much want to run this all through the cmd line, so lets build the github repo and go from there
+
+
+
+
+
+
+
+
+
+
