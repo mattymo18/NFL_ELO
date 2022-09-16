@@ -14,15 +14,32 @@ library(tidyverse)
 ```{r}
 url <- "https://projects.fivethirtyeight.com/nfl-api/nfl_elo_latest.csv"
 
-data <- read_csv(url)
+DF <- read_csv(url)
 ```
 
 ```{r}
-head(data, 50)
+head(DF, 50)
 ```
 
 Ok seems, like the data is pretty nice, I'll pretty much want to run this all through the cmd line, so lets build the github repo and go from there
 
+```{r}
+#get todays date
+
+Sys.Date()
+
+#ok perfect but i want the whole week
+
+Date_Check = c(Sys.Date(), Sys.Date() + 2,  Sys.Date() + 3, 
+               Sys.Date() + 4, Sys.Date() + 5, Sys.Date() + 6,
+               Sys.Date() + 7)
+```
+
+
+```{r}
+DF.current <- DF %>% 
+  filter(date %in% Date_Check)
+```
 
 
 

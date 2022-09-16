@@ -1,5 +1,5 @@
-README
-===============
+Gambling with ELO
+=================
 
 USAGE
 -----
